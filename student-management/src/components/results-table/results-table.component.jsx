@@ -33,8 +33,8 @@ const ResultsTable = () => {
                 <tbody>
                 {results.map(result => (
                     <tr key={result.uuid}>
-                        <Td>{result.course.title}</Td>
-                        <Td>{`${result.student.firstName} ${result.student.familyName}`}</Td>
+                        <Td>{result.courseData.title}</Td>
+                        <Td>{`${result.studentData.firstName} ${result.studentData.familyName}`}</Td>
                         <Td>{result.score}</Td>
                     </tr>
                 ))}
